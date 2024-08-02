@@ -1,4 +1,4 @@
-# Ionic Dev Menu
+# Steve's Ionic Menu for Developers
 A menu for Ionic developers so you don't have to type commands all the time.
 
 I got sick of having to look up the commands for doing Ionic and Capacitor commands for common things.
