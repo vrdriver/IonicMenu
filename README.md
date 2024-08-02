@@ -1,4 +1,4 @@
-# IonicMenu
+# Ionic Dev Menu
 A menu for Ionic developers so you don't have to type commands all the time.
 
 I got sick of having to look up the commands for doing Ionic and Capacitor commands for common things.
