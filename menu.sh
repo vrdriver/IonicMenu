@@ -1,10 +1,8 @@
-# by Srephen Monro 2024
-
-
-#!/bin/bash
+# by Stephen Monro 2024
 
 # MIT Licence. 
 
+#!/bin/bash
 
 # Menu title
 TITLE="Steve's Ionic Menu"
@@ -13,6 +11,7 @@ TITLE="Steve's Ionic Menu"
 OPTIONS=(
     "Create new page"
     "-----"
+    "Build and sync ALL"
     "Build and sync iOS"
     "Build and sync Android"
     "Open iOS project"
@@ -63,81 +62,85 @@ execute_option() {
             echo "Command: ionic generate page $PAGE_NAME"
             ionic generate page $PAGE_NAME
             ;;
-        2)  echo "Executing: ionic capacitor sync ios"
+        2)  echo "Executing: npx cap sync"
+            echo "Command: npx cap sync"
+            npx cap sync
+            ;;
+        3)  echo "Executing: ionic capacitor sync ios"
             echo "Command: ionic capacitor sync ios"
             ionic capacitor sync ios
             ;;
-        3)  echo "Executing: ionic capacitor sync android"
+        4)  echo "Executing: ionic capacitor sync android"
             echo "Command: ionic capacitor sync android"
             ionic capacitor sync android
             ;;
-        4)  echo "Executing: ionic capacitor open ios"
+        5)  echo "Executing: ionic capacitor open ios"
             echo "Command: ionic capacitor open ios"
             ionic capacitor open ios
             ;;
-        5)  echo "Executing: ionic capacitor open android"
+        6)  echo "Executing: ionic capacitor open android"
             echo "Command: ionic capacitor open android"
             ionic capacitor open android
             ;;
-        6)  echo "Executing: ionic serve"
+        7)  echo "Executing: ionic serve"
             echo "Command: ionic serve"
             ionic serve
             ;;
-        7)  echo "Executing: ionic capacitor build ios"
+        8)  echo "Executing: ionic capacitor build ios"
             echo "Command: ionic capacitor build ios"
             ionic capacitor build ios
             echo "Executing: ionic capacitor build android"
             echo "Command: ionic capacitor build android"
             ionic capacitor build android
             ;;
-        8)  echo "Executing: ionic capacitor sync ios"
+        9)  echo "Executing: ionic capacitor sync ios"
             echo "Command: ionic capacitor sync ios"
             ionic capacitor sync ios
             echo "Executing: ionic capacitor sync android"
             echo "Command: ionic capacitor sync android"
             ionic capacitor sync android
             ;;
-        8)  echo "Exiting..."
-            exit 0
-            ;;
-        10)  echo "Executing: ionic generate page"
+        ## 10)  echo "Exiting..."
+        ##    exit 0
+        ##    ;;
+        11)  echo "Executing: ionic generate page"
             read -p "Enter page name: " PAGE_NAME
             echo "Command: ionic generate page $PAGE_NAME"
             ionic generate page $PAGE_NAME
             echo "Exiting..."
             exit 0
             ;;
-        11)  echo "Executing: ionic capacitor sync ios"
+        12)  echo "Executing: ionic capacitor sync ios"
             echo "Command: ionic capacitor sync ios"
             ionic capacitor sync ios
             echo "Exiting..."
             exit 0
             ;;
-        12)  echo "Executing: ionic capacitor sync android"
+        13)  echo "Executing: ionic capacitor sync android"
             echo "Command: ionic capacitor sync android"
             ionic capacitor sync android
             echo "Exiting..."
             exit 0
             ;;
-        13)  echo "Executing: ionic capacitor open ios"
+        14)  echo "Executing: ionic capacitor open ios"
             echo "Command: ionic capacitor open ios"
             ionic capacitor open ios
             echo "Exiting..."
             exit 0
             ;;
-        14)  echo "Executing: ionic capacitor open android"
+        15)  echo "Executing: ionic capacitor open android"
             echo "Command: ionic capacitor open android"
             ionic capacitor open android
             echo "Exiting..."
             exit 0
             ;;
-        15)  echo "Executing: ionic serve"
+        16)  echo "Executing: ionic serve"
             echo "Command: ionic serve"
             ionic serve
             echo "Exiting..."
             exit 0
             ;;
-        16)  echo "Executing: ionic capacitor build ios"
+        17)  echo "Executing: ionic capacitor build ios"
             echo "Command: ionic capacitor build ios"
             ionic capacitor build ios
             echo "Executing: ionic capacitor build android"
@@ -146,7 +149,7 @@ execute_option() {
             echo "Exiting..."
             exit 0
             ;;
-        17)  echo "Executing: ionic capacitor sync ios"
+        18)  echo "Executing: ionic capacitor sync ios"
             echo "Command: ionic capacitor sync ios"
             ionic capacitor sync ios
             echo "Executing: ionic capacitor sync android"
@@ -161,7 +164,7 @@ execute_option() {
             echo "Exiting..."
             exit 0
             ;;
-        19) echo "Exiting..."
+        20) echo "Exiting..."
             exit 0
             ;;
         *)  echo "Invalid option: $MENU_INDEX"
