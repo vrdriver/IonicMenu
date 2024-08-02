@@ -1,4 +1,10 @@
+# by Srephen Monro 2024
+
+
 #!/bin/bash
+
+# MIT Licence. 
+
 
 # Menu title
 TITLE="Steve's Ionic Menu"
