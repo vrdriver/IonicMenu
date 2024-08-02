@@ -15,3 +15,4 @@ then run
 
 ./menu.sh
 
+![Screenshot 2024-08-02 at 19 53 31](https://github.com/user-attachments/assets/66911119-0e96-4530-ae23-ee6a1b239925)
