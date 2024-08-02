@@ -16,5 +16,4 @@ Then run to get the menu up:
 
     ./menu.sh
 
-![Screenshot 2024-08-02 at 19 53 31](https://github.com/user-attachments/assets/66911119-0e96-4530-ae23-ee6a1b239925)
-
+![Screenshot 2024-08-02 at 21 27 38](https://github.com/user-attachments/assets/c530db27-8942-4abd-b548-52d33cdb3306)
