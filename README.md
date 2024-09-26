@@ -16,4 +16,8 @@ Then run to get the menu up:
 
     ./menu.sh
 
+Or just run it with:
+
+    sh ./menu.sh    
+
 ![Screenshot 2024-08-02 at 21 27 38](https://github.com/user-attachments/assets/c530db27-8942-4abd-b548-52d33cdb3306)
